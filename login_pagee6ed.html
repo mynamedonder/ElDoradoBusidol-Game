@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- Mirrored from html5games.cafe24.com/login/login_page.php?mode=EN by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Feb 2021 02:24:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0 maximum-scale=1 user-scalable=no">
+	<meta name="description" content="Find the golden city with your friends! ">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="expires" content="0" />
+
+	<title>Eldorado login</title>
+
+	<!-- 부트스트랩 -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/Main.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/util_Function4web.js#20201204_1"></script>
+	<script language="javascript" type="text/javascript" src="../ELDORADO_WEB/GoogleAnalytics/google_analytics.js"></script>
+	<style type='text/css'>
+
+		table
+		{
+			position : relative;
+			top: -4px;
+			left: -4px;
+			font-size: 20px;
+			text-align: center;
+			/*background: yellow;  */
+			border-collapse:collapse;
+			width: 1280px;
+			height:720px;
+		}
+
+		input
+		{
+			font-size: 25px
+		}
+
+		.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+				position: relative;
+				min-height: 0;
+				padding: 0;
+			}
+		.bg_box {
+			background-color: #000000;
+			opacity: 0.3;
+			border-radius: 10px;
+
+		}
+		.form_box {
+			margin-top: 80px;
+
+		}
+		.font_color {
+
+			color: white;
+		}
+		.font_label {
+			font-size: larger;
+			font-weight: bolder;
+			text-shadow: 2px 2px 2px black;
+
+		}
+		.anchor_color {
+			/*color: #0F375B;*/
+			color: #ffffff;
+			text-shadow: 2px 2px 2px black;
+		}
+		button,
+		input
+		 {
+		  border: 1px black solid;
+		  color: black;
+
+		}
+
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+
+			$('#div_body').css({
+						left:'0px',
+						top:'0px',
+						width: 1280+'px',
+						height: 720+'px', //25를 +한 이유 : 모바일 가로 모드에서 스크롤 될 수 있게
+						overflow: 'hidden'
+			});
+			$('#div_body_bg').css({
+						left:'0px',
+						top:'0px',
+						width: 1280+'px',
+						height: 720+'px',
+						overflow: 'hidden',
+						position:'absolute'
+			});
+
+			$('#AD_FIT_BG').css({
+						left:'0px',
+						top:'0px',
+						position:'absolute'
+			});
+			util4web.init();
+
+			var scene_name = 'PC_LOGIN_EN';
+			send_analytics(scene_name);
+		});
+
+	</script>
+
+</head>
+
+
+ <body>
+ 	<!-- AdFit 광고 적용 20201127_dblee -->
+ 	<div id="AD_FIT" class="row">
+						<img id="AD_FIT_BG" src="image/intro_bg.jpg">
+						<div id="AD_BOX_LEFT" class="col-md-2 hidden-xs hidden-sm ">
+							<div id="ad-block-left">
+								<ins class="kakao_ad_area" style="display:none;" data-ad-unit    = "DAN-mIm9x8VVtEcpbvNc" data-ad-width   = "160" data-ad-height  = "600"></ins>
+								<script type="text/javascript" src="../../t1.daumcdn.net/kas/static/ba.min.js" async></script>
+							</div>
+						</div>
+						<div id="GAME_BOX" class="col-xs-9 col-sm-9 col-md-8">
+							<div id="div_body" class="col-xs-12" >
+								<div id="div_body_bg" class="col-xs-12 bg_box " ></div>
+								<div id="div_body_form" >
+									<form name="flogin" method="post" action="http://html5games.cafe24.com/login/login_page.php" class="form_box">
+						<table>
+							<tr>
+								<td align="center" height=200 colspan="2" class="font_color anchor_color"><strong><h1 >[ ElDorado ]</h1></strong><h2> Login please.</h2><br><br></td>
+							</tr>
+							<tr>
+								<td align="right" height=70 class="font_label font_color " >ID : <input type="text" name="eldorado_id"></td>
+								<td align="center" height=70 width = 480></td>
+							</tr>
+							<tr>
+								<td align="right" height=70 class="font_label font_color " >Password : <input type="password" name="password_1"></td>
+								<td align="center" height=70 width = 480></td>
+							</tr>
+							<tr>
+								<td align="center" height=100 colspan="2"  class="font_label font_color"><input type="submit" value=" Login " name="language"></td>
+							</tr>
+							<tr>
+								<td align="center" height=100 colspan="2"  class="font_label "><a href="login_page1916.html?mode=KR" class="font_label anchor_color" >한글 > </a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" height=150 colspan="2"></td>
+							</tr>
+						</table>
+					</form>
+								</div>
+
+							</div>
+						</div> <!-- GAME_BOX -->
+						<div id="AD_BOX_RIGHT"  class="col-xs-3 col-sm-3 col-md-2">
+							<div id="ad-block-right">
+								<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-DPxRnxGXMAG9QkO3" data-ad-width="160"
+									data-ad-height="600"></ins>
+								<script type="text/javascript" src="../../t1.daumcdn.net/kas/static/ba.min.js" async></script>
+							</div>
+
+						</div>
+						<img id="rotate_screen">	<!-- 위치 이동 -->
+					</div> <!--
+	<div id="AD_FIT" class="row">
+		<img id="AD_FIT_BG" src="image/intro_bg.jpg">
+		<div id="AD_BOX_LEFT" class="col-md-2 hidden-xs hidden-sm ">
+			<div id="ad-block-left">
+				<ins class="kakao_ad_area" style="display:none;" data-ad-unit    = "DAN-mIm9x8VVtEcpbvNc" data-ad-width   = "160" data-ad-height  = "600"></ins>
+				<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+			</div>
+		</div>
+		<div id="GAME_BOX" class="col-xs-9 col-sm-9 col-md-8">
+			<div id="div_body" class="col-xs-12" >
+				<div id="div_body_bg" class="col-xs-12 bg_box " ></div>
+				<div id="div_body_form" >
+					<form name="flogin" method="post" action="login_page.php" class="form_box">
+						<table>
+							<tr>
+								<td align="center" height=200 colspan="2" class="font_color anchor_color"><strong><h1 >[ ElDorado ]</h1></strong><h2> Login please.</h2><br><br></td>
+							</tr>
+							<tr>
+								<td align="right" height=70 class="font_label font_color " >ID : <input type="text" name="eldorado_id"></td>
+								<td align="center" height=70 width = 480></td>
+							</tr>
+							<tr>
+								<td align="right" height=70 class="font_label font_color " >Password : <input type="password" name="password_1"></td>
+								<td align="center" height=70 width = 480></td>
+							</tr>
+							<tr>
+								<td align="center" height=100 colspan="2"  class="font_label font_color"><input type="submit" value=" Login " name="language"></td>
+							</tr>
+							<tr>
+								<td align="center" height=100 colspan="2"  class="font_label "><a href="./login_page.php?mode=KR" class="font_label anchor_color" >한글 > </a>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" height=150 colspan="2"></td>
+							</tr>
+						</table>
+					</form>				</div>
+
+			</div>
+		</div>
+		<div id="AD_BOX_RIGHT"  class="col-xs-3 col-sm-3 col-md-2">
+			<div id="ad-block-right">
+				<ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-DPxRnxGXMAG9QkO3" data-ad-width="160"
+					data-ad-height="600"></ins>
+				<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+			</div>
+
+		</div>
+		<img id="rotate_screen">
+	</div>
+ -->
+
+	<!-- a href='./login_kr.html'>KOR</a -->
+ </body>
+
+<!-- Mirrored from html5games.cafe24.com/login/login_page.php?mode=EN by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Feb 2021 02:24:50 GMT -->
+</html>
